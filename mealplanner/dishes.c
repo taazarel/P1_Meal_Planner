@@ -8,5 +8,7 @@ Dish dishes[Dish_Total] = {
     { "Fried rice",          { "rice", "egg", "onion", "carrot" },       4 },
     { "Cheese sandwich",     { "bread", "cheese", "butter" },            3 },
     { "Mashed potatoes",     { "potato", "butter", "milk" },             3 },
-    { "Chicken soup",        { "chicken", "carrot", "onion", "potato" }, 4 }
+    { "Chicken soup",        { "chicken", "carrot", "onion", "potato" }, 4 },
+        { "Mashed potatoes", { "potato", "onion", "oat milk" "plant oil" }, 4 },
+    { "Nachos", { "chips", "cheese"}, 2 }     
 };
