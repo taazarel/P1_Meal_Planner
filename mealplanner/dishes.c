@@ -1,5 +1,6 @@
 #include "dishes.h"
 
+/*uses dish skabelon*/
 Dish dishes[Dish_Total] = {
     { "Mashed potatoes", { "potato", "onion", "oatmilk", "plantoil" }, 4 },
     { "Nachos", { "chips", "cheese"}, 2 },

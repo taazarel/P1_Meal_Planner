@@ -3,15 +3,19 @@
 #include "dishfinder.h"
 #include "dishes.h"
 
+
 void find_dishes(int argc, char *argv[]) {
     int found_any = 0;
 
+    /*loops hver dish*/
     printf("You can make: \n");
     for (int d = 0; d < Dish_Total; d++) {
 
+        /*looper hver ingrediens*/
         int missing = 0;
         for (int i = 0; i < dishes[d].ingredient_count; i++) {
 
+            /*stringcompare hver ingrediens med hver arguments*/
             int have_it = 0;
             for (int h = 1; h < argc; h++) {
                 if (strcmp(dishes[d].ingredients[i], argv[h]) == 0) {
