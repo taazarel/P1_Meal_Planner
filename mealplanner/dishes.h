@@ -1,7 +1,7 @@
 #ifndef DISHES_H
 #define DISHES_H
 
-#define Dish_Total 10
+#define Dish_Total 15
 #define Max_Ingredients 5
 
 
