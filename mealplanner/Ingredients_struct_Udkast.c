@@ -1,5 +1,4 @@
-struct Ingredient liste[3] = {
-    {"chips", VEGETABLE},
+struct Ingredient liste[24] = {
     {"potato", VEGETABLE},
     {"onion", VEGETABLE},
     {"oatmilk", PLANT_BASED},
