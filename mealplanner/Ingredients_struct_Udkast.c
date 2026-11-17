@@ -1,3 +1,4 @@
+/*Udvidelse?*/
 #include "dishes.h"
 
 /* Kategori */
