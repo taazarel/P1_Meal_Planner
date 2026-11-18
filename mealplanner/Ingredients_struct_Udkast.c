@@ -1,5 +1,3 @@
-/*Udvidelse?*/
-/* Kategori */
 enum category {
     VEGETABLE,
     PASTA,
@@ -20,7 +18,6 @@ enum maale_enhed {
     GRAM
 };
 
-
 /* Holdbarhed i dage */
 enum holdbarhed {
     DAG_1   = 1,
@@ -35,33 +32,34 @@ enum holdbarhed {
 struct Ingredient {
     char navn[50];
     enum category category;
+    enum maale_enhed maale_enhed;
     enum holdbarhed holdbarhed;
-    enum maale_enhed maale_enhed
 };
 
-struct Ingredient liste[24] = {
-    {"potato",    VEGETABLE, PIECES,     DAGE_14},
-    {"onion",     VEGETABLE,  PIECES,   DAGE_5},
-    {"oatmilk",   PLANT_BASED, LITERS,  DAGE_7},
-    {"plantoil",  PLANT_BASED, SPOON,   DAGE_14},
+struct Ingredient liste[] = {
+    {"potato",    VEGETABLE,     PIECES, DAGE_14},
+    {"onion",     VEGETABLE,     PIECES, DAGE_7},
+    {"oatmilk",   PLANT_BASED,   LITERS, DAGE_7},
+    {"plantoil",  PLANT_BASED,   SPOON,  DAGE_14},
     {"cheese",    DAIRY_PRODUCT, PIECES, DAGE_14},
     {"cream",     DAIRY_PRODUCT, LITERS, DAGE_7},
-    {"chips",     SNACKS, GRAM, DAGE_14},
-    {"carrot",    VEGETABLE, KG,  DAGE_7},
-    {"broth",     PLANT_BASED, PIECES,  DAGE_14},
-    {"chicken",   MEAT, KG, DAGE_3},
-    {"garlic",    VEGETABLE, PIECES, DAGE_7},
-    {"eggs",      EGG_PRODUCT, PIECES, DAGE_7},
-    {"bacon",     MEAT, GRAM,  DAGE_7},
-    {"spinatch",   VEGETABLE, KG, DAGE_5},
-    {"spaghetti", PASTA,  KG, DAGE_30},
-    {"onions",    VEGETABLE, PIECES, DAGE_7},
-    {"flour",     BREAD,  GRAM, DAGE_30},
-    {"butter",    DAIRY_PRODUCT, GRAM, DAGE_14},
-    {"milk",      DAIRY_PRODUCT, CUP, DAGE_14},
-    {"pork",      MEAT, KG, DAGE_14},
-    {"tomato",    VEGETABLE, PIECES,  DAGE_7},
-    {"rice",      PASTA,  GRAM, DAGE_30},
-    {"bread",     BREAD, KG, DAGE_14},
-    {"beef",      MEAT,  KG, DAGE_7}
+    {"chips",     SNACKS,        GRAM,   DAGE_14},
+    {"carrot",    VEGETABLE,     KG,     DAGE_7},
+    {"broth",     PLANT_BASED,   PIECES, DAGE_14},
+    {"chicken",   MEAT,          KG,     DAGE_3},
+    {"garlic",    VEGETABLE,     PIECES, DAGE_7},
+    {"eggs",      EGG_PRODUCT,   PIECES, DAGE_7},
+    {"bacon",     MEAT,          GRAM,   DAGE_7},
+    {"spinach",   VEGETABLE,     KG,     DAGE_5},
+    {"spaghetti", PASTA,         KG,     DAGE_30},
+    {"flour",     BREAD,         GRAM,   DAGE_30},
+    {"butter",    DAIRY_PRODUCT, GRAM,   DAGE_14},
+    {"milk",      DAIRY_PRODUCT, CUP,    DAGE_14},
+    {"pork",      MEAT,          KG,     DAGE_14},
+    {"tomato",    VEGETABLE,     PIECES, DAGE_7},
+    {"rice",      PASTA,         GRAM,   DAGE_30},
+    {"bread",     BREAD,         KG,     DAGE_14},
+    {"beef",      MEAT,          KG,     DAGE_7}
 };
+
+const int antal = sizeof(liste) / sizeof(liste[0]);
