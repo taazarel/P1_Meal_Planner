@@ -1,6 +1,4 @@
 /*Udvidelse?*/
-#include "dishes.h"
-
 /* Kategori */
 enum category {
     VEGETABLE,
@@ -12,6 +10,16 @@ enum category {
     EGG_PRODUCT,
     BREAD
 };
+
+enum maale_enhed {
+    SPOON,
+    CUP,
+    PIECES,
+    KG,
+    LITERS,
+    GRAM
+};
+
 
 /* Holdbarhed i dage */
 enum holdbarhed {
@@ -28,31 +36,32 @@ struct Ingredient {
     char navn[50];
     enum category category;
     enum holdbarhed holdbarhed;
+    enum maale_enhed maale_enhed
 };
 
 struct Ingredient liste[24] = {
-    {"potato",    VEGETABLE,     DAGE_14},
-    {"onion",     VEGETABLE,     DAGE_5},
-    {"oatmilk",   PLANT_BASED,   DAGE_7},
-    {"plantoil",  PLANT_BASED,   DAGE_14},
-    {"cheese",    DAIRY_PRODUCT, DAGE_14},
-    {"cream",     DAIRY_PRODUCT, DAGE_7},
-    {"chips",     SNACKS,        DAGE_14},
-    {"carrot",    VEGETABLE,     DAGE_7},
-    {"broth",     PLANT_BASED,   DAGE_14},
-    {"chicken",   MEAT,          DAGE_3},
-    {"garlic",    VEGETABLE,     DAGE_7},
-    {"eggs",      EGG_PRODUCT,   DAGE_7},
-    {"bacon",     MEAT,          DAGE_7},
-    {"spinach",   VEGETABLE,     DAGE_5},
-    {"spaghetti", PASTA,         DAGE_30},
-    {"onions",    VEGETABLE,     DAGE_7},
-    {"flour",     BREAD,         DAGE_30},
-    {"butter",    DAIRY_PRODUCT, DAGE_14},
-    {"milk",      DAIRY_PRODUCT, DAGE_14},
-    {"pork",      MEAT,          DAGE_14},
-    {"tomato",    VEGETABLE,     DAGE_7},
-    {"rice",      PASTA,         DAGE_30},
-    {"bread",     BREAD,         DAGE_14},
-    {"beef",      MEAT,          DAGE_7}
+    {"potato",    VEGETABLE, PIECES,     DAGE_14},
+    {"onion",     VEGETABLE,  PIECES,   DAGE_5},
+    {"oatmilk",   PLANT_BASED, LITERS,  DAGE_7},
+    {"plantoil",  PLANT_BASED, SPOON,   DAGE_14},
+    {"cheese",    DAIRY_PRODUCT, PIECES, DAGE_14},
+    {"cream",     DAIRY_PRODUCT, LITERS, DAGE_7},
+    {"chips",     SNACKS, GRAM, DAGE_14},
+    {"carrot",    VEGETABLE, KG,  DAGE_7},
+    {"broth",     PLANT_BASED, PIECES,  DAGE_14},
+    {"chicken",   MEAT, KG, DAGE_3},
+    {"garlic",    VEGETABLE, PIECES, DAGE_7},
+    {"eggs",      EGG_PRODUCT, PIECES, DAGE_7},
+    {"bacon",     MEAT, GRAM,  DAGE_7},
+    {"spinatch",   VEGETABLE, KG, DAGE_5},
+    {"spaghetti", PASTA,  KG, DAGE_30},
+    {"onions",    VEGETABLE, PIECES, DAGE_7},
+    {"flour",     BREAD,  GRAM, DAGE_30},
+    {"butter",    DAIRY_PRODUCT, GRAM, DAGE_14},
+    {"milk",      DAIRY_PRODUCT, CUP, DAGE_14},
+    {"pork",      MEAT, KG, DAGE_14},
+    {"tomato",    VEGETABLE, PIECES,  DAGE_7},
+    {"rice",      PASTA,  GRAM, DAGE_30},
+    {"bread",     BREAD, KG, DAGE_14},
+    {"beef",      MEAT,  KG, DAGE_7}
 };
