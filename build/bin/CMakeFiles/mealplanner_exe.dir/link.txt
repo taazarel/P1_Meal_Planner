@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/mealplanner_exe.dir/link.d CMakeFiles/mealplanner_exe.dir/main.c.o -o mealplanner_exe  ../libs/libdishfinder.a ../libs/libdishes.a

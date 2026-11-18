@@ -1,2 +1,0 @@
-/usr/bin/ar qc libdishfinder.a CMakeFiles/dishfinder.dir/dishfinder.c.o
-/usr/bin/ranlib libdishfinder.a

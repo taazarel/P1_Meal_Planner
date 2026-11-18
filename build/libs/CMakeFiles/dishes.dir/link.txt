@@ -1,2 +1,0 @@
-/usr/bin/ar qc libdishes.a CMakeFiles/dishes.dir/dishes.c.o
-/usr/bin/ranlib libdishes.a
