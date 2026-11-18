@@ -1,0 +1,120 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : [],
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-c0864588125d49672f2a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.4"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "libs",
+					"jsonFile" : "directory-libs-708c19ff0d6adcdda27b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "libs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"build" : "bin",
+					"jsonFile" : "directory-bin-625f91fba41c0f1783da.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "bin",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "mealplanner",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "dishes::@10801ec9068017628f26",
+					"jsonFile" : "target-dishes-f589e1b70cb81715c8e1.json",
+					"name" : "dishes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "dishfinder::@10801ec9068017628f26",
+					"jsonFile" : "target-dishfinder-99113077269adcd704e3.json",
+					"name" : "dishfinder",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ingredients_struct::@10801ec9068017628f26",
+					"jsonFile" : "target-ingredients_struct-d8188391237cd67d136f.json",
+					"name" : "ingredients_struct",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "mealplanner_exe::@90a2315b7a9c97cd24d2",
+					"jsonFile" : "target-mealplanner_exe-b9e66a37a3fa29e6b46f.json",
+					"name" : "mealplanner_exe",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/celestia/Projects/P1_Meal_Planner/build",
+		"source" : "/home/celestia/Projects/P1_Meal_Planner"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 12
+	}
+}

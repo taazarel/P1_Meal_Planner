@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/celestia/Projects/P1_Meal_Planner/build/cmake_install.cmake",
+		"/home/celestia/Projects/P1_Meal_Planner/build/libs/cmake_install.cmake",
+		"/home/celestia/Projects/P1_Meal_Planner/build/bin/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libingredients_struct.a CMakeFiles/ingredients_struct.dir/Ingredients_struct_Udkast.c.o
+/usr/bin/ranlib libingredients_struct.a
