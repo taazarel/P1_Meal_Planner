@@ -4,8 +4,7 @@
 typedef struct cooking_flags {
   int vegan;
   int vegetarian;
-  int muslim;
-  int hindu;
+  int religion;
   int lactose_intolerant;
 
 } cooking_flags_t;
