@@ -1,0 +1,2 @@
+add_executable(mealplanner_exe main.c)
+target_link_libraries(mealplanner_exe dishfinder)
