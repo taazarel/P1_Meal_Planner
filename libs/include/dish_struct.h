@@ -3,14 +3,14 @@
 #include "Ingredients_struct.h"
 
 typedef struct cooking_flags {
-  int vegan;
-  int vegetarian;
-  int muslim;
-  int hindu;
-  int lactose_intolerant;
-  int gluten_intolerant;
-  int kosher;
-  int pescetarian;
+  bool vegan;
+  bool vegetarian;
+  bool muslim;
+  bool hindu;
+  bool lactose_intolerant;
+  bool gluten_intolerant;
+  bool kosher;
+  bool pescetarian;
 
 } cooking_flags_t;
 
