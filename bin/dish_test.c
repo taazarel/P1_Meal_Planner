@@ -18,7 +18,7 @@ int main(void) {
       .flags = &cream_potatoes_flag,
   };
 
-  printf("Cooking time of %s: %d", cream_potatoes.name,
+  printf("Cooking time of %s: %d minutes!", cream_potatoes.name,
          cream_potatoes.cooking_time_minutes);
 
   return 0;
