@@ -1,5 +1,6 @@
 #ifndef INGREDIENT_H_
 #define INGREDIENT_H_
+#define MAX_CATEGORIES 8
 
 enum category {
   VEGETABLE,
