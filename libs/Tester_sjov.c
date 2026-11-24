@@ -8,7 +8,7 @@ int main(void) {
     char ingredients[MAX][LENGHT];
     int antal = 0;
 
-    FILE *fil = fopen("ingredienser.txt", "r");
+    FILE *fil = fopen("ingredientser.txt", "r");
     if (file == NULL) {
         printf("Could not open file \n");
         return 1;
