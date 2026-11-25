@@ -39,4 +39,8 @@ typedef struct Ingredient {
   enum expiry expiry;
 } Ingredient_t;
 
+
+extern struct Ingredient liste[];
+
+
 #endif
